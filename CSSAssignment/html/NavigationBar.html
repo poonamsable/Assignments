@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/NavigationBar.css">
+</head>
+<body>
+    <div class="navb">
+    <button >Home</button>
+    <button>About</button>
+    <button onclick="dropDown()" class="dropbtn">Products</button>
+    <button>Services</button>
+    <button>Contact</button>
+    </div>
+    <div id="dropDownList" class="dropdownContent">
+        <a href="#">Engineering</a><br>
+        <a href="#">Telecom</a><br>
+        <a href="#">Energy</a><br>
+        <a href="#">Finance</a><br>
+        <a href="#">Consultancy</a>
+    </div>
+    <script>
+    function dropDown(){
+        document.getElementById("dropDownList").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdownContent");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+</body>
+
+</html>

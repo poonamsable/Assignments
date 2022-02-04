@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/register2.css">
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form>
+        <table id="tab">
+        <tr>
+            <td>Employee ID: </td>
+            <td><input type="number" min="10001" max="15000" required></td>
+        </tr>
+        <tr>
+            <td>First Name: </td>
+            <td><input type="text" pattern="[A-Za-z]{3-15}" required></td>
+        </tr>
+        <tr>
+            <td>Last Name: </td>
+            <td><input type="text" pattern="[A-Za-z]{5-25}" required></td>
+        </tr>
+        <tr>
+            <td>Department: </td>
+            <td>
+                <input type="radio" checked="checked" name="radio" id="f1">
+                <label for="f1">IT<span class="checkmark"></span></label><br>
+                <input type="radio" checked="checked" name="radio" id="f2">
+                <label for="f2">HR<span class="checkmark"></span></label><br>
+                <input type="radio" checked="checked" name="radio" id="f3">
+                <label for="f3">Finance<span class="checkmark"></span></label><br>
+                <input type="radio" checked="checked" name="radio" id="f4">
+                <label for="f4">Admin<span class="checkmark"></span></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Date Of Joining: </td>
+            <td><input type="date" max="2022-01-18" required></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td><input type="email" required></td>
+        </tr>
+         <tr>
+            <td>Contact No: </td>
+            <td><input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+        </tr>
+         <tr class="ad">
+            <td>Adress: </td>
+            <td><input type="text" class="adr" required></td>
+        </tr>
+         <tr>
+            <td>Training Program to be Attended: </td>
+            <td>
+                <input type="checkbox" id="sb1" name="sb1">
+                <label for="sb1"> Web Basic</label><br>
+                <input type="checkbox" id="sb2" name="sb2">
+                <label for="sb2">C#</label><br>
+                <input type="checkbox" id="sb3" name="sb3">
+                <label for="sb3"> Entity FrameWork</label><br>
+                <input type="checkbox" id="sb4" name="sb4">
+                <label for="sb4"> ASP.NET MVC</label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="success.html"><button>Submit</button></a>
+                <a href="Register.html"><button>Cancel</button></a></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+        th, td {
+        padding: 5px;
+        text-align: left;
+        }
+    </style>
+</head>
+<body>
+  <table style="width:50%">
+  <tr>
+    <th>Href:</th>
+    <td id="hr" ></td>
+  </tr>
+  <tr>
+    <th>Path Name:</th>
+    <td id="path"></td>
+  </tr>
+  <tr>
+    <th>Protocol:</th>
+    <td id="prot"></td>
+  </tr>
+</table>
+
+<p>click <a href="register.html">here</a> to register</p>
+</body>
+<script>
+    document.getElementById("hr").innerHTML = "file : "+window.location.pathname;
+    document.getElementById("path").innerHTML =window.location.pathname;
+    document.getElementById("prot").innerHTML =window.location.protocol;
+</script>
+</html>
