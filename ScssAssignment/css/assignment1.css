@@ -1,0 +1,29 @@
+.ip1 {
+  border: 2px solid;
+  border-radius: 3px;
+  background-color: #ffffff;
+  width: 300px;
+  color: #666666;
+  height: 36px;
+  font-style: SegoUI;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.ip2 {
+  border: 2px solid;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  width: 300px;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.ip3 {
+  border: 2px solid;
+  border-radius: 3px;
+  background-color: #fde7e1;
+  width: 300px;
+  color: #f44336;
+}
+/*# sourceMappingURL=assignment1.css.map */
