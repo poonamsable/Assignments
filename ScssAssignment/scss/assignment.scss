@@ -1,0 +1,51 @@
+
+@mixin my-div($width1,$color, $height,$bcolor){
+    border: 2px solid $bcolor;
+    background-color: $color;
+    width: $width1;
+    height: $height;
+    border-width: 8px;
+}
+.container{
+  display: flex;
+  width: 400px;
+}
+.theme1 {
+    .left {
+    @include my-div(200px,darkcyan,200px,khaki);
+    }
+    .right {
+    @include my-div(200px,grey,200px,khaki);
+    flex: 1;
+    .button{
+        background-color: brown;
+        margin-top: 70%;
+        margin-left: 20%;
+        color: white;
+        width: 100px;
+        height: 40px;
+        border-radius: 8px;
+        // color:maroon
+        }
+    }
+}
+.theme2 {
+    .left {
+    @include my-div(200px,darksalmon,200px, lightcoral);
+    }
+    .right {
+    @include my-div(200px,indianred,200px,lightcoral);
+    .button{
+         background-color:maroon;
+        //  margin-top: 70%;
+        //  margin-left: 60%;
+        margin-top: 70%;
+        margin-left: 20%;
+        width: 100px;
+        height: 40px;
+        color: white;
+        border-radius: 8px;
+        }
+    }
+}
+

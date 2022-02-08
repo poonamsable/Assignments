@@ -1,0 +1,22 @@
+@mixin my-input($rad,$color,$my-width,$bgcolor){
+    border: 2px solid;
+    border-radius: $rad;
+    background-color: $bgcolor;
+    width: $my-width;
+    color: $color;
+}
+.ip1{
+    @include my-input(3px,#666666,300px,#ffffff);
+    height:36px;
+    //border:1px solid #ccc;
+    font-style:SegoUI;
+    font-size: 13px;
+    padding-left:10px;
+}
+.ip2{
+     @include my-input(3px,#999999,300px,#eeeeee);
+     cursor: not-allowed;
+}
+.ip3{
+    @include my-input(3px,#f44336,300px,#fde7e1);
+}
